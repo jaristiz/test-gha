@@ -1,0 +1,11 @@
+name: 'action-test-one action'
+description: 'This is the first action that we are going to call'
+runs:
+  using: "composite"
+  steps:
+    - name: First step of action-test-one
+      run: |
+        echo "This is an output of the FIRST step of the action-test-one"
+    - name: Second step of action-test-one
+      run: |
+        echo "This is an output of the SECOND step of the action-test-one"
