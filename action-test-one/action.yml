@@ -8,7 +8,7 @@ runs:
       run: |
         echo "This is an output of the FIRST step of the action-test-one"
         export STEP_OUTPUT
-        $STEP_OUTPUT="{test}"
+        $STEP_OUTPUT="\{test\}"
         echo "$STEP_OUTPUT"
         echo "set-output::test-var::$STEP_OUTPUT"
     - name: Second step of action-test-one
